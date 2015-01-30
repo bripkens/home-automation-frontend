@@ -9,11 +9,7 @@
   ],
   "license": "MIT",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "dependencies": {
+    "ionic": "1.0.0-beta.14"
+  }
 }
