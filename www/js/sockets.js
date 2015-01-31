@@ -1,11 +1,14 @@
 (function() {
   'use strict';
 
-  var module = angular.module('HomeAutomation.sockets', ['ionic']);
+  var module = angular.module('HomeAutomation.sockets', [
+    'HomeAutomation.common',
+    'ionic'
+  ]);
 
-  module.service('SocketService', function($http) {
+  module.service('SocketService', function($http, routes) {
     this.getAll = function() {
-      return $http.get('/api/sockets')
+      return $http.get(routes.sockets)
       .then(function(response) {
         return response.data;
       });
