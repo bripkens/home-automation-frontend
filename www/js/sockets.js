@@ -1,6 +1,11 @@
 (function() {
   'use strict';
 
+  var socketIcons = {
+    '0': 'ion-ios7-lightbulb',
+    '1': 'ion-ios7-bolt'
+  };
+
   var module = angular.module('HomeAutomation.sockets', [
     'HomeAutomation.common',
     'ionic'
@@ -50,6 +55,10 @@
 
     ctrl.deactivate = function(socket) {
       SocketService.deactivate(socket);
+    };
+
+    ctrl.getSocketIcon = function(socket) {
+      return socketIcons[socket.type.id];
     };
   });
 

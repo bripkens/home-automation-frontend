@@ -1,0 +1,12 @@
+.item-button-row {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.item-button-row button {
+  font-size: 18px;
+  line-height: 32px;
+  min-width: 34px;
+  min-height: 34px;
+}
